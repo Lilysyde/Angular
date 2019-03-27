@@ -1,0 +1,19 @@
+<p>
+  Vive John-Doe works!
+</p>
+<p>
+  <img [src]="User.photo" [alt]="nom" /><br />
+  Nom : {{User.name}} <br />
+  Prénom : {{User.firstName}} <br />
+
+</p>
+<input User.quote [(ngModel)]="User.quote" placeholder="TwO Beer or Not to Beer">
+<p>{{User.quote}}</p><br/>
+
+<button name="favorite" type="button" label="contact" (click)="User.hide = !User.hide"  >
+  <svg viewBox="0 0 10 10"><path d="M7 9L5 8 3 9V6L1 4h3l1-3 1 3h3L7 6z"/></svg>
+  Afficher/Masquer  mon  AGe 
+</button>
+<p [hidden]="User.hide">Age:{{User.age}} </p>
+
+
