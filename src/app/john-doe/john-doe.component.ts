@@ -12,7 +12,7 @@ export class JohnDoeComponent implements OnInit {
     firstName : 'John',
     age : 25,
     quote : '',
-   hidden:"true",
+    hide :true,
     photo : 'https://randomuser.me/api/portraits/lego/2.jpg'
   };
   
@@ -21,4 +21,4 @@ export class JohnDoeComponent implements OnInit {
   ngOnInit() {
   }
 
-}
+} 

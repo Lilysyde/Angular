@@ -5,12 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { JohnDoeComponent } from './john-doe/john-doe.component';
+import { AngularDirectiveComponent } from './angular-directive/angular-directive.component';
+import { HightlightDirective } from './angular-directive/hightlight.directive';
+import { ShowMoviesDirective } from './angular-directive/show-movies.directive';
+import { BambiiDirective } from './bambii.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
-    JohnDoeComponent
+    JohnDoeComponent,
+    AngularDirectiveComponent,
+    HightlightDirective,
+    ShowMoviesDirective,
+    BambiiDirective
   ],
   imports: [
     BrowserModule,
