@@ -4,7 +4,7 @@ import { Directive, ElementRef, OnInit, Renderer2, HostListener, HostBinding } f
   selector: '[appBambii]'
 })
 export class BambiiDirective implements OnInit{
-  @HostListener('style.backgroundColor') myBackgroundColor:string;
+  @HostBinding('style.backgroundColor') myBackgroundColor:string;
   constructor() { }
 
   ngOnInit(){
