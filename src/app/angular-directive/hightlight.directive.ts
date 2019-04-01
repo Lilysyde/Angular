@@ -4,7 +4,7 @@ import { Directive, ElementRef, OnInit, Renderer2, HostListener, HostBinding } f
   selector: '[appHightlight]'
 })
 export class HightlightDirective implements OnInit {
-  @HostListener('style.backgroundColor') myBackgroundColor:string;
+  @HostBinding('style.backgroundColor') myBackgroundColor:string;
 
   constructor() {}
 
@@ -12,10 +12,10 @@ export class HightlightDirective implements OnInit {
     //this.renderer.setStyle(this.elRef.nativeElement, 'background-color', 'black');
 
   }
-  @HostListener('mouseover') onMouseHoverEvent (eventData:Event) {
+  @HostListener('mouseenter') mouseEnterEvent (eventData:Event) {
     this.myBackgroundColor= 'blue';
   }
-  @HostListener('mouseout') OnMouseOutEvent (eventData:Event) {
+  @HostListener('mouseleave') mouseLeaveEvent (eventData:Event) {
     this.myBackgroundColor= 'pink';
   }
 }
