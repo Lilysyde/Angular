@@ -5,7 +5,8 @@ import { JohnDoeComponent } from './john-doe/john-doe.component';
 const ROUTES: Routes = [
   { path: 'signup', component: SignUpComponent },
   { path: 'johndoe', component: JohnDoeComponent },
-  { path: 'route', component: Router}
+  { path: 'route', component: Router},
+  { path: '', redirectTo: '/johndoe', pathMatch: 'full' },
 ];
 
 export { ROUTES };
